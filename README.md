@@ -7,8 +7,8 @@
 - [Common Git Commands](#common-git-commands)
   - [Github commands:](#github-commands)
   - [Git examples:](#git-examples)
-- [Command Line Reference](#command-line-reference)
-  - [Windows Commands](#windows-commands)
+- [Universal Command Line Reference](#universal-command-line-reference)
+  - [Common Windows Commands](#common-windows-commands)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
