@@ -7,6 +7,8 @@
 - [Common Git Commands](#common-git-commands)
   - [Github commands:](#github-commands)
   - [Git examples:](#git-examples)
+- [Command Line Reference](#command-line-reference)
+  - [Windows Commands](#windows-commands)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,3 +46,9 @@ git commit -a -m 'fixed the broken email address'
 git checkout master
 git merge hotfix
 ```
+
+## Command Line Reference
+Note that CMD represents Windows and Bash is typically Linux and OS X is Macintosh
+[Universal Command Line Reference](https://www.ss64.com)
+
+### Windows Commands
