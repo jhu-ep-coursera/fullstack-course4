@@ -7,7 +7,8 @@
 - [Common Git Commands](#common-git-commands)
   - [Github commands:](#github-commands)
   - [Git examples:](#git-examples)
-- [Universal Command Line Reference](#universal-command-line-reference)
+- [Command Line Reference](#command-line-reference)
+  - [Universal Command Reference Link](#universal-command-reference-link)
   - [Common Windows Commands](#common-windows-commands)
 - [Module 1 Guidelines](#module-1-guidelines)
   - [Coming Soon](#coming-soon)
@@ -58,8 +59,9 @@ git checkout master
 git merge hotfix
 ```
 
-## Universal Command Line Reference
-Note that CMD represents Windows and Bash is typically Linux and OS X is Macintosh
+## Command Line Reference
+### Universal Command Reference Link
+Note that CMD represents Windows and Bash is typically Linux and OS X is Macintosh<br>
 [Universal Command Line Reference](https://www.ss64.com)
 
 ### Common Windows Commands
