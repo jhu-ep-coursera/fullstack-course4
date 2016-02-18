@@ -31,14 +31,17 @@ This repository contains all of the example source code used in the Coursera.org
 ### Github commands:
 Command      | Description
 ------------ | -------------
+git add . |Add all changes to all files at your current working directory location. Must be a git project.
 git branch -v -a|Lists all branches in your repository. Asterisk next to current branch you are working on.
 git branch testing|Create testing branch.
-git checkout testing|Switch to testing branch.
 git branch -b testing|Create and switch to testing branch.
-git commit -m "Some changes"|Commit changes with comments to current working branch.
-git checkout master|Checkout the master trunk.
 git branch -d testing|Remove the testing branch.
 git branch -D testing|Force remove testing branch.
+git checkout testing|Switch to testing branch.
+git commit -m "Some changes"|Commit changes with comments to current working branch.
+git commit -am "Some changes"|Add all changes to all files and commit changes to current working branch.
+git checkout master|Checkout the master trunk.
+git push origin master|Push your committed changes up to your master branch. 'master' may be subsituted for another branch.
 git status|Get the status of files in the current repo.
 
 
