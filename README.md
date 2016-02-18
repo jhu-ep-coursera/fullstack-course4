@@ -62,7 +62,7 @@ git merge hotfix
 ## Command Line Reference
 ### Universal Command Reference Link
 Note that CMD represents Windows and Bash is typically Linux and OS X is Macintosh<br>
-[Universal Command Line Reference](https://www.ss64.com)
+[Universal Command Line Reference](http://www.ss64.com)
 
 ### Common Windows Commands
 
