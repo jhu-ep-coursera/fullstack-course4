@@ -60,10 +60,111 @@ Note that CMD represents Windows and Bash is typically Linux and OS X is Macinto
 [Universal Command Line Reference](https://www.ss64.com)
 
 ### Common Windows Commands
-Note you do not need to capitalize the command. Commands be upper or lowercase.
 
-[Source: SOPHOS Basic DOS Commands](https://www.sophos.com/en-us/support/knowledgebase/13195.aspx)
-<table width="100%" cellspacing="1" cellpadding="0" border="1" class="data">     <tbody>         <tr>             <th width="52%" valign="top">Command and Usage</th>             <th width="48%" valign="top">Examples</th>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>ATTRIB</code><br>             Change file attributes. '+' adds an attribute, '-' removes it. Attributes are: A=archive; R=read only; S=system; H=hidden. </p>             </td>             <td valign="top" style="width: 48%;"><code>ATTRIB -R -A -S -H &lt;VIRUS.EXE&gt;</code><br>             All these attributes will be removed from virus.exe.</td>         </tr>         <tr>             <td valign="top" style="width: 52%;"><code>C:</code><br>             Go to the C: drive. Similarly A: and D: etc. </td>             <td valign="top" style="width: 48%;"><code>C: </code></td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>CD</code><br>             Change directory. When you change directory, the prompt changes, showing the path of the directory you are currently in.</p>             <p>Note, directory is the term used by DOS for what Windows calls a folder.</p>             </td>             <td valign="top" style="width: 48%;"><code>CD\</code> takes you to the top of the directory tree (typically to C:) .             <p><code>CD.. </code>moves you one level up the directory tree (i.e. up towards the root directory).</p>             <p><code>CD &lt;DIRECTORYNAME&gt; </code>takes you to that directory. You can use one or more subdirectory names, separated by \ e.g. <br>             <code>CD WINNT\Media </code>takes you to the directory C:\WINNT\Media</p>             <p>To change to another path, type the full path with slashes. e.g. <br>             <code>CD \WINDOWS\SYSTEM </code></p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;"><code>CLS</code><br>             Clear the screen.</td>             <td valign="top" style="width: 48%;"><code>CLS </code></td>         </tr>         <tr>             <td valign="top" style="width: 52%;"><code>DEL</code><br>             Delete one or more files in the current directory. Can be used with the '*' and the '?' wildcards.             <p><code>DEL *.* </code>will delete ALL files in the current directory, USE WITH CAUTION.</p>             <p>(Note: DEL cannot be used to delete directories. Use RD to remove a directory.) </p>             </td>             <td valign="top" style="width: 48%;"><code>DEL &lt;VIRUS.EXE&gt; </code>deletes virus.exe             <p><code>DEL *.JPG </code>will delete all files with the extension JPG.</p>             <p><code>DEL MY*.* </code>will delete all files beginning with MY and with any extension.</p>             <p><code>DEL MY??.* </code>will delete files that are 4 characters long and begin with MY and with any extension.</p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;"><code>DIR</code><br>             Displays the contents of a directory (folder).             <p>Note, directory is the term used by DOS for what Windows calls a folder. </p>             <p>These switches can be combined, so <code>DIR /W /P </code>will return multiple rows listing a page at a time.</p>             <p>You can use the '*' and the '?' wildcards to search for a particular file. The ? character represents ONE character, and the * character represents multiple characters.</p>             <p><code>DIR *.* </code>lists all the files in a directory. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>DIR </code>displays all files and folders in the current directory. Folders are indicated in the list by &lt;DIR&gt;.<br>             Files are usually listed by name.</p>             <p><code>DIR /P </code>displays the contents a page at a time, i.e. as many as will fit in your command line window. Press any key to display the next page.</p>             <p><code>DIR /W </code>displays the files/folders in multiple rows. This view gives less information per file.</p>             <p><code>DIR *.JPG </code>displays all files with the extension JPG in the current directory and all subdirectories.</p>             <p><code>DIR MY??.* </code>displays all files beginning with MY, exactly 4 characters long, and with any extension.</p>             <p><code>DIR /S</code> lists the contents of all subdirectories.</p>             <p><code>DIR /AH</code> displays all hidden files.</p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>EDIT</code><br>             Runs DOS EDIT (a simple text editor). Useful for editing batch files and viewing logs. This command requires QBASIC.EXE to be present. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>EDIT &lt;VIRUSLOG.TXT&gt; </code>opens the file viruslog.txt and allows you to edit it.</p>             <p><code>EDIT &lt;NEWFILE.TXT&gt; </code>creates a new file called newfile.txt and opens it up for you to edit. </p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>HELP</code><br>             Displays DOS Help. For help on an individual command, type HELP then the command for which you want more information. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>HELP DIR</code> displays information on the DIR command. </p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>MD</code><br>             Make directory. Creates a new directory below the current one. (The command can also be written as <code>MKDIR</code>) </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>MD &lt;NEWDIR&gt;</code> creates a new directory called Newdir. </p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>PRINT</code><br>             Prints the specified file (if the printer is supported in DOS - many are not). </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>PRINT &lt;LOGFILE.TXT&gt;</code></p>             <p>Prints LOGFILE.TXT </p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>RD</code><br>             Remove directory. Removes a subdirectory of the current directory. The directory you want to remove must be empty of all files. (The command can also be written as RMDIR) </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>RD &lt;DIRECTORYNAME&gt; </code></p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>RENAME</code><br>             Rename a file. You must use the full file name including the suffix. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>RENAME &lt;OLDNAME.EXE&gt; &lt;NEWNAME.EXE&gt;</code></p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>TYPE</code><br>             Displays the contents of a file on the screen. If you use this command on a file which is not a text file, the display will be unintelligible. Use with "|MORE" to display the text on a page by page basis, and prevent it scrolling off the screen. "|" is a pipe character. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>TYPE C:\README.TXT|MORE </code></p>             </td>         </tr>         <tr>             <td valign="top" style="width: 52%;">             <p><code>&gt;</code><br>             When you run a DOS command, output is usually sent to the screen. Use &gt; to redirect output from the screen to a file. It runs the command preceding the &gt;, creates a file in the current directory with the name you specify, and sends the information/output returned by the command, to that file. </p>             </td>             <td valign="top" style="width: 48%;">             <p><code>COMMAND &gt; FILENAME.TXT</code></p>             <p>e.g. SWEEP &gt; REPORT.TXT The details of any infected files reported by SWEEP are sent to a file called REPORT.TXT. </p>             </td>         </tr>     </tbody> </table>
+<table width="100%" cellspacing="1" cellpadding="0" border="1" class="data">
+   <tbody>
+      <tr>
+         <th width="52%" valign="top">Command and Usage</th>
+         <th width="48%" valign="top">Examples</th>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>attrib</code>
+               <br> Alter the file attributes. The '+' adds an attribute, and '-' removes it. Attributes are: a=archive; r=read only; s=system; h=hidden. </p>
+         </td>
+         <td valign="top" style="width: 48%;"><code>attrib -r -a -s -Hh index.html</code>
+            <br> All previously mentioned attributes will be cleared from index.html</td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;"><code>C:</code>
+            <br> Shortcut to the C: drive. Can substitue 'C' for other drive letters. </td>
+         <td valign="top" style="width: 48%;"><code>C: </code>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>cd</code>
+               <br> Navigate into a directory.</p>
+            <p>Note that a directory is also referred to as a folder.</p>
+         </td>
+         <td valign="top" style="width: 48%;">Just typing <code>cd\</code> by itself goes to the base (root) of the file system and is usually the C: drive.
+            <p><code>cd.. </code>navigates up one level. Say you are in the 'foo' directory and want to get out of this directory. This would get out of 'foo'</p>
+            <p><code>cd &lt;directory name&gt; </code>navigates to that directory. You can provide a path of directories \ e.g.
+               <br> <code>cd Users\myself\Documents\git\mycode </code>takes you to C:\Users\myself\Documents\git\mycode</p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;"><code>cls</code>
+            <br> Clear (reset) the screen.</td>
+         <td valign="top" style="width: 48%;"><code>cls </code>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;"><code>del</code>
+            <br> Delete one or more files in the current working directory. Can be used with the '*' and the '?' wildcards.
+            <p><code>del *.* </code>will delete every file in the current directory.</p>
+            <p>(Note: del alone cannot be used to delete other directories. Use <code>rd</code> to remove a directory.) </p>
+         </td>
+         <td valign="top" style="width: 48%;"><code>del index.html </code>deletes index.html
+            <p><code>del *.html </code>will delete all HTML files at your current location.</p>
+            <p><code>del foo*.* </code>will delete all files beginning with 'foo' that are any type.</p>
+            <p><code>del foo??.* </code>will delete files that are 5 characters long and begin with 'foo' that are any type.</p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;"><code>dir</code>
+            <br> List (reveal) contents of a directory (folder).
+            <p><code>dir *.html </code>displays all HTML files in the current and subdirectories.</p>
+            <p><code>dir /s</code> lists the contents of all subdirectories.</p>
+            <p><code>dir /ah</code> displays all hidden files.</p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>help</code>
+               <br> Displays DOS help info. For info on an individual command simply type help followed by the command. </p>
+         </td>
+         <td valign="top" style="width: 48%;">
+            <p><code>help md</code> displays information on the cls (make directory) command. </p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>md</code>
+               <br> Generate (make) directory. Creates a new directory at your current location. May also substitute with <code>mkdir</code></p>
+         </td>
+         <td valign="top" style="width: 48%;">
+            <p><code>md boo</code> create 'boo' directory. </p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>rd</code>
+               <br> Delete a directory. Note that the directory you want to remove not have any files. The command <code>rmdir</code> may be used instead of <code>rd</code></p>
+         </td>
+         <td valign="top" style="width: 48%;">
+            <p><code>rd boo</code> deletes the 'boo' directory</p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>rename</code>Renames a file.</p>
+         </td>
+         <td valign="top" style="width: 48%;">
+            <p><code>rename foo.html zoo.html</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td valign="top" style="width: 52%;">
+            <p><code>type</code>
+               <br> Pipe (display) the contents of a file to terminal. If the file doesn't contain text (e.g. image) gibberish (binary encodings) will be displayed. If you pipe this command to more with "|more" then the text will be displayed one page at a time. </p>
+         </td>
+         <td valign="top" style="width: 48%;">
+            <p><code>type site\index.html|more </code> displays index.html one page at a time.</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Module 1 Guidelines
 ### Coming Soon
