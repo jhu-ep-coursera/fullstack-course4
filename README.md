@@ -2,20 +2,23 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Github commands:](#github-commands)
-- [Git examples:](#git-examples)
+- [Coursera: HTML, CSS and Javascript for Web Developers](#coursera-html-css-and-javascript-for-web-developers)
+  - [Example Source Code](#example-source-code)
+- [Common Git Commands](#common-git-commands)
+  - [Github commands:](#github-commands)
+  - [Git examples:](#git-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-#Coursera: HTML, CSS and Javascript for Web Developers
-##Example Source Code
+## Coursera: HTML, CSS and Javascript for Web Developers
+### Example Source Code
 This repository contains all of the example source code used in the Coursera.org course called
 [HTML, CSS and Javascript for Web Developers](https://www.coursera.org/learn/html-css-javascript-for-web-developers).
 
 [Enroll now! It's free!](https://www.coursera.org/learn/html-css-javascript-for-web-developers)
 
-#Common Git Commands
-## Github commands:
+## Common Git Commands
+### Github commands:
 Command      | Description
 ------------ | -------------
 git branch -v -a|Lists all branches in your repository. Asterisk next to current branch you are working on.
@@ -29,7 +32,7 @@ git branch -D testing|Force remove testing branch.
 git status|Get the status of files in the current repo.
 
 
-## Git examples:
+### Git examples:
 **Merging a branch into the master**
 ```
 git checkout -b 'hotfix'
