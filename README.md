@@ -56,7 +56,7 @@ Common Windows Commands:
 Note you do not need to capitolize the command. May be upper or lowercase.
 
 [Source: SOPHOS Basic DOS Commands](https://www.sophos.com/en-us/support/knowledgebase/13195.aspx)
-|Command       |Description   |Example
+| Command       | Description   | Example
 ---|---|---| 
 |ATTRIB|Change file attributes. '+' adds an attribute, '-' removes it. Attributes are: A=archive; R=read only; S=system; H=hidden.|ATTRIB -R -A -S -H <VIRUS.EXE>
 All these attributes will be removed from virus.exe.
