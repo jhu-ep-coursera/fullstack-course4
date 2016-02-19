@@ -118,6 +118,8 @@ Note that CMD represents Windows and Bash is typically Linux and OS X is Macinto
       <tr>
          <td valign="top" style="width: 52%;"><code>dir</code>
             <br> List (reveal) contents of a directory (folder).
+         </td>
+         <td valign="top" style="width: 52%;">
             <p><code>dir *.html </code>displays all HTML files in the current and subdirectories.</p>
             <p><code>dir /s</code> lists the contents of all subdirectories.</p>
             <p><code>dir /ah</code> displays all hidden files.</p>
