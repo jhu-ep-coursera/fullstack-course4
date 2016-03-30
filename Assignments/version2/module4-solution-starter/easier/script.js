@@ -1,3 +1,6 @@
+// ******************************* 
+// START HERE IF YOU WANT AN EASIER STARTING POINT FOR THIS ASSIGNMENT
+// *******************************
 //
 // Module 4 Assignment Instructions.
 //
