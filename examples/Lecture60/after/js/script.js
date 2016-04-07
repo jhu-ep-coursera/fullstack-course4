@@ -15,7 +15,7 @@ var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
 
-// Convinience function for inserting innerHTML for 'select'
+// Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
