@@ -23,7 +23,7 @@ var menuItemsUrl =
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
-// Convinience function for inserting innerHTML for 'select'
+// Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
@@ -93,7 +93,7 @@ dc.loadMenuItems = function (categoryShort) {
 };
 
 
-// Builds HTML for the categiries page based on the data
+// Builds HTML for the categories page based on the data
 // from the server
 function buildAndShowCategoriesHTML (categories) {
   // Load title snippet of categories page

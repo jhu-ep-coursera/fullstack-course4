@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
-    // Unobstrusive event binding
+    // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
         
