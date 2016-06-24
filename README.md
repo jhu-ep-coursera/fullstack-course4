@@ -10,14 +10,7 @@
 - [Command Line Reference](#command-line-reference)
   - [Universal Command Reference Link](#universal-command-reference-link)
   - [Common Windows Commands](#common-windows-commands)
-- [Module 1 Guidelines](#module-1-guidelines)
-  - [Coming Soon](#coming-soon)
-- [Module 2 Guidelines](#module-2-guidelines)
-  - [Coming Soon](#coming-soon-1)
-- [Module 3 Guidelines](#module-3-guidelines)
-  - [Coming Soon](#coming-soon-2)
-- [Module 4 Guidelines](#module-4-guidelines)
-  - [Coming Soon](#coming-soon-3)
+
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -172,14 +165,3 @@ Note that CMD represents Windows and Bash is typically Linux and OS X is Macinto
    </tbody>
 </table>
 
-## Module 1 Guidelines
-### Coming Soon
-
-## Module 2 Guidelines
-### Coming Soon
-
-## Module 3 Guidelines
-### Coming Soon
-
-## Module 4 Guidelines
-### Coming Soon
