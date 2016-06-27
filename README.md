@@ -36,6 +36,7 @@ git pull|Pull down any changes that were checked into a branch (Git repository).
 git push|Push your committed changes to your currently checked out branch.
 git push origin master|Push your committed changes up to your master branch. 'master' may be subsituted for another branch.
 git status|Get the status of files in the current repo.
+git status -uno|Check if your local branch is up-to-date with the remote one
 
 
 ### Git examples:
