@@ -7,6 +7,16 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       $("#collapsable-nav").collapse('hide');
     }
   });
+
+  // In Firefox and Safari, the click event doesn't retain the focus
+  // on the clicked button. Therefore, the blur event will not fire on
+  // user clicking somewhere else in the page and the blur event handler
+  // which is set up above will not be called.
+  // Refer to issue #28 in the repo.
+  // Solution: force focus on the element that the click event fired on
+  $("#navbarToggle").click(function (event) {
+    $(event.target).focus();
+  });
 });
 
 (function (global) {
@@ -30,15 +40,15 @@ var showLoading = function (selector) {
 
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
-  
+
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtml, 
+  homeHtml,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
-  }, 
+  },
   false);
 });
 
@@ -46,4 +56,3 @@ $ajaxUtils.sendGetRequest(
 global.$dc = dc;
 
 })(window);
-
