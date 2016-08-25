@@ -7,6 +7,16 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       $("#collapsable-nav").collapse('hide');
     }
   });
+
+  // In Firefox and Safari, the click event doesn't retain the focus
+  // on the clicked button. Therefore, the blur event will not fire on
+  // user clicking somewhere else in the page and the blur event handler
+  // which is set up above will not be called.
+  // Refer to issue #28 in the repo.
+  // Solution: force focus on the element that the click event fired on
+  $("#navbarToggle").click(function (event) {
+    $(event.target).focus();
+  });
 });
 
 (function (global) {
@@ -14,12 +24,12 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl = 
-  "http://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl =
+  "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 
-// Convinience function for inserting innerHTML for 'select'
+// Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
@@ -32,8 +42,8 @@ var showLoading = function (selector) {
   insertHtml(selector, html);
 };
 
-// Return substitute of '{{propName}}' 
-// with propValue in given 'string' 
+// Return substitute of '{{propName}}'
+// with propValue in given 'string'
 var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
@@ -43,15 +53,15 @@ var insertProperty = function (string, propName, propValue) {
 
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
-  
+
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtml, 
+  homeHtml,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
-  }, 
+  },
   false);
 });
 
@@ -64,7 +74,7 @@ dc.loadMenuCategories = function () {
 };
 
 
-// Builds HTML for the categiries page based on the data
+// Builds HTML for the categories page based on the data
 // from the server
 function buildAndShowCategoriesHTML (categories) {
   // Load title snippet of categories page
@@ -75,8 +85,8 @@ function buildAndShowCategoriesHTML (categories) {
       $ajaxUtils.sendGetRequest(
         categoryHtml,
         function (categoryHtml) {
-          var categoriesViewHtml = 
-            buildCategoriesViewHtml(categories, 
+          var categoriesViewHtml =
+            buildCategoriesViewHtml(categories,
                                     categoriesTitleHtml,
                                     categoryHtml);
           insertHtml("#main-content", categoriesViewHtml);
@@ -89,10 +99,10 @@ function buildAndShowCategoriesHTML (categories) {
 
 // Using categories data and snippets html
 // build categories view HTML to be inserted into page
-function buildCategoriesViewHtml(categories, 
+function buildCategoriesViewHtml(categories,
                                  categoriesTitleHtml,
                                  categoryHtml) {
-  
+
   var finalHtml = categoriesTitleHtml;
   finalHtml += "<section class='row'>";
 
@@ -102,10 +112,10 @@ function buildCategoriesViewHtml(categories,
     var html = categoryHtml;
     var name = "" + categories[i].name;
     var short_name = categories[i].short_name;
-    html = 
+    html =
       insertProperty(html, "name", name);
-    html = 
-      insertProperty(html, 
+    html =
+      insertProperty(html,
                      "short_name",
                      short_name);
     finalHtml += html;
@@ -119,4 +129,3 @@ function buildCategoriesViewHtml(categories,
 global.$dc = dc;
 
 })(window);
-

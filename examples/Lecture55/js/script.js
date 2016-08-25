@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",
       }
     }
 
-    // Unobstrusive event binding
+    // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", sayHello);
 
