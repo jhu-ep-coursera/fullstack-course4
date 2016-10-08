@@ -51,18 +51,17 @@ Both the tablet view and the desktop view of what&#39;s graded and required is t
 
 Here is the mockup illustration of the mobile view (only required graded parts are shown):
 
- ![mobile collapsed](images/mobile-collapsed.png)
+ ![mobile collapsed](images/menu-collapsed.png)
 
  ![mobile expanded](images/mobile-expanded.png)
 
 
-**\*\*\* REQUIRED GRADED ASSIGNMENT ENDS HERE \*\*\***
-
-
-
-
-
-**OPTIONAL**** , **** UNGRADED **** PORTION IS BELOW:**
+**&#42;&#42;&#42; REQUIRED GRADED ASSIGNMENT ENDS HERE &#42;&#42;&#42;**  
+<br/>
+<br/>
+<br/>
+<br/>
+**OPTIONAL, UNGRADED PORTION IS BELOW:**
 
 **The rest of this assignment is not graded and is optional, but it&#39;s good practice, so go for it if you have time. The solution to the optional ungraded portion of the assignment below does NOT have to be submitted.**
 
