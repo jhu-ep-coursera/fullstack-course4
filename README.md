@@ -7,4 +7,6 @@ This repository contains all of the example source code used in the Coursera.org
 
 
 ## Frequently Asked Questions
-Please check our FAQ to see if a question you want to ask on the forums has been answered already. Here is the link to the FAQ: [Frequently Asked Questions](https://github.com/jhu-ep-coursera/fullstack-course4/wiki/Frequently-Asked-Questions-(FAQ)
+Please check our FAQ to see if a question you want to ask on the forums has been answered already. Here is the link to the FAQ:
+
+[Frequently Asked Questions](https://github.com/jhu-ep-coursera/fullstack-course4/wiki/Frequently-Asked-Questions-(FAQ))
