@@ -1,5 +1,5 @@
 ## Most Important!
-  - [How to ask and get your question answered - A MUST READ!](#q-how-to-ask-and-get-your-question-answered---a-must-read)
+  - [How to ask and get your question answered - A MUST READ!](#q-how-to-ask-and-get-your-question-answered-a-must-read)
 
 ## Computer and Environment Setup
   - [What is a terminal and how do I open it?](#q-what-is-a-terminal-and-how-do-i-open-it)
@@ -40,7 +40,7 @@
 
 ### Most Important!
 
-####**Q: How to ask and get your question answered - A MUST READ!**
+####**Q: How to ask and get your question answered: A MUST READ!**
 A: There is a simple theme to this answer: Help others help you!
 
 Before I dive into how to answer your question, let me put things into perspective. You are asking others to spend their time helping you figure out your issue for *free*. You should do all you can to help them minimize the time they spend helping you upfront. It's the *least* you can do.
