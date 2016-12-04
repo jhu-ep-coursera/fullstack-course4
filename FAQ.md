@@ -61,7 +61,7 @@ Here is a general guide as to what you should provide:
 
 3. If you are having issues with installation, GitHub, etc., make sure to describe what you did with enough detail, and if there are errors or logs that you saw, you need to include those in your question. Simply saying "It doesn't let me push my code to the repository" won't do. If you tried to push the code and it didn't work, there were error messages that were displayed. Provide those messages, including the exact command you used.
 
- **Last, but certainly not least!** I can't recount every scenario that can occur in this short guide. **Use common sense.** Ask yourself: If I came up to a total stranger in this class and showed them my post, would they have enough information to help me or would they for sure have to ask me something? If they would have to ask you something, you are not done with your post. Yes, of course, there are times when you yourself don't know what you don't know. That's ok. Just put in an honest effort to HELP OTHERS HELP YOU.
+**Last, but certainly not least!** I can't recount every scenario that can occur in this short guide. **Use common sense.** Ask yourself: If I came up to a total stranger in this class and showed them my post, would they have enough information to help me or would they for sure have to ask me something? If they would have to ask you something, you are not done with your post. Yes, of course, there are times when you yourself don't know what you don't know. That's ok. Just put in an honest effort to HELP OTHERS HELP YOU.
 
 ###Computer and Environment Setup
 
