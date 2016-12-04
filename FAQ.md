@@ -45,7 +45,7 @@
 ####**Q: How to ask and get your question answered: A MUST READ!**
 A: There is a simple theme to this answer: Help others help you!
 
-Before I dive into how to answer your question, let me put things into perspective. You are asking others to spend their time helping you figure out your issue for *free*. You should do all you can to help them minimize the time they spend helping you upfront. It's the *least* you can do.
+Before I dive into how you should ask your question, let me put things into perspective. You are asking others to spend their time helping you figure out your issue for *free*. You should do all you can to help them minimize the time they spend helping you upfront. It's the *least* you can do.
 
 Asking generic questions like "My code doesn't work. Please help!" is basically useless as you are inviting people to spend their time asking you basics like: "Ok, *what* doesn't work? Where is your code?"
 
