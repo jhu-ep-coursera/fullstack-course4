@@ -1,6 +1,6 @@
 ## Most Important!
-  - [How to ask and get your question answered - A MUST READ!](#how-to-ask-and-get-your-question-answered-a-must-read)
-  
+  - [How to ask and get your question answered - A MUST READ!](#q-how-to-ask-and-get-your-question-answered---a-must-read)
+
 ## Computer and Environment Setup
   - [What is a terminal and how do I open it?](#q-what-is-a-terminal-and-how-do-i-open-it)
   - [What is a command prompt?](#q-what-is-a-command-prompt)
