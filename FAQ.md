@@ -12,6 +12,7 @@
   - [I followed the instructions to setup my computer as presented in the video, but I am still having problems.  What could be wrong?](#q-i-followed-the-instructions-to-setup-my-computer-as-presented-in-the-video-but-i-am-still-having-problems--what-could-be-wrong)
 
 ## Sublime Text, browser-sync, and Other Course Tools
+  - [I am unable to install browser-sync](#q-i-am-unable-to-install-browser-sync)
   - [How do I use the Sublime Text HTML shortcuts demonstrated in the lecture videos?](#q-how-do-i-use-the-sublime-text-html-shortcuts-demonstrated-in-the-lecture-videos)
   - [Sublime text is not auto-completing after I hit `ctrl+space`](#q-sublime-text-is-not-auto-completing-after-i-press-ctrlspace)
   - [How do I edit multiple lines at the same time in Sublime Text?](#q-how-do-i-edit-multiple-lines-at-the-same-time-in-sublime-text)
@@ -19,6 +20,7 @@
   - [I’m making changes to my CSS and JavaScript and also running browser-sync, why aren’t my changes showing up in the browser?](#q-im-making-changes-to-my-css-and-javascript-and-also-running-browser-sync-why-arent-my-changes-showing-up-in-the-browser)
 
 ## Git
+  - [I am unable to clone the github repo or upload my assignment](#q-i-am-unable-to-clone-the-github-repo-or-upload-my-assignment)
   - [While typing in my password during an attempt to push files to GitHub, nothing is showing up while I type.  What is going on?](#q-while-typing-in-my-password-during-an-attempt-to-push-files-to-github-nothing-is-showing-up-while-i-type--what-is-going-on)
   - [Why am I seeing “Please tell me who you are” when trying to commit to git?](#q-why-am-i-seeing-please-tell-me-who-you-are-when-trying-to-commit-to-git)
   - [What GitHub URL do I use to access my site?](#q-what-github-url-do-i-use-to-access-my-site)
@@ -147,6 +149,43 @@ Lastly, though you may be running the same operating system as that shown in the
 ### **Sublime Text, browser-sync, and Other Course Tools**
 
 
+#### **Q: I am unable to install browser-sync**
+A: A very common reason for this is that you are trying to install it on a work or school computer and you are behind a proxy.  
+
+You will see errors like:
+
+    npm ERR! network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+    [...]
+    npm ERR! network connect ETIMEDOUT
+    npm ERR! network This is most likely not a problem with npm itself
+    npm ERR! network and is related to network connectivity.
+    npm ERR! network In most cases you are behind a proxy or have bad network settings.
+
+or
+
+    npm ERR! Error: tunneling socket could not be established, cause=getaddrinfo ENOENT
+
+There will be a load of other stuff but these are key parts of the error.
+
+The simplest solution is to use a computer which is not behind a proxy, but if this is not possible then you will need to obtain the proxy details from your IT department and configure npm to use them as follows:
+
+    npm config set proxy http://proxy.company.com:proxyport
+    npm config set https-proxy http://proxy.company.com:proxyport
+
+where 'proxy.company.com' is the proxy server namoe or IP address supplied by your IT department, and proxyport is the port number they supply.
+
+Note that if you need to supply credentials to the proxy (again, IT should be able to advise) then you should add them to the proxy address:
+
+    npm config set proxy http://username:password@proxy.company.com:proxyport
+    npm config set https-proxy http://username:password@proxy.company.com:proxyport
+
+You may also find this link useful:
+http://digitaldrummerj.me/proxy-configurations/#npm
+
+If you continue to have problems with this, as there are some variations depending on your particular environment then you may find google to be your best source of help as many other people have had similar problems.
+
+Finally, please note that if you do use a proxy then you will most likely have to configure git to use proxy settings too so please see this answer: [I am unable to clone the github repo or upload my assignment](#q-i-am-unable-to-clone-the-github-repo-or-upload-my-assignment).
+
 #### **Q: How do I use the Sublime Text HTML shortcuts demonstrated in the lecture videos?**
 A: These shortcuts require the Emmet plugin: https://packagecontrol.io/packages/Emmet.  Be sure to follow the directions provided with Emmet to ensure it is property installed and ready to use with Sublime Text.
 
@@ -209,6 +248,31 @@ And I’m running the previous browser-sync command from site/ then any changes 
 
 
 ### **Git**
+
+#### **Q: I am unable to clone the github repo or upload my assignment**
+A: A very common reason for this is that you are using a computer at work or school computer and you are behind a proxy.  
+
+You will see errors like:
+
+    fatal: unable to access 'https://github.com/<some repo>': Failed to connect to github.com port 443: Connection refused
+  
+The simplest solution is to use a computer which is not behind a proxy, but if this is not possible then you will need to obtain the proxy details from your IT department and configure git to use them as follows:
+
+    git config --global http.proxy http://http://proxy.company.com:proxyport
+
+where 'proxy.company.com' is the proxy server namoe or IP address supplied by your IT department, and proxyport is the port number they supply.
+
+Note that if you need to supply credentials to the proxy (again, IT should be able to advise) then you should add them to the proxy address:
+
+    git config --global http.proxy http://username:password@proxy.company.com:proxyport
+    git config --global https.proxy http://username:password@proxy.company.com:proxyport
+
+You may also find this link useful:
+http://digitaldrummerj.me/proxy-configurations/#git
+
+If you continue to have problems with this, as there are some variations depending on your particular environment then you may find google to be your best source of help as many other people have had similar problems.
+
+Finally, please note that if you do use a proxy then you will most likely have to configure npm to use proxy settings too so please see this answer: [I am unable to install browser-sync](#q-i-am-unable-to-install-browser-sync).
 
 #### **Q: While typing in my password during an attempt to push files to GitHub, nothing is showing up while I type.  What is going on?**
 A:  Unlike most experiences we have while typing in a password,  programs that run in the terminal behave a little differently.  You are likely familiar with seeing asterisks printed in place of the letters you type for your password, be it while logging into your bank’s website or even your Coursera account.  On the terminal, however, while you are typing your password, you will not see any characters show up on the screen.  Even though you cannot see anything printed on the screen while typing it, type your entire password and hit the Enter key when done.
