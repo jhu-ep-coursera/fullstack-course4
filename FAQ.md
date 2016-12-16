@@ -304,7 +304,7 @@ Click that green button and you'll have a choice to either download all of the c
 ![Select cope of clone location](images/GitHubCopyCloneLink.png)
 
 #### **Q: Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.**
-A: Yes, GitHub has changed the way how GitHub Pages are created. They now removed the "Launch automatic page generator" button. Instead, they allow you to host your pages in the branch of your choice.
+A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages in the branch of your choice.
 
 This is what you will see when you go to the Settings page of your repo.
 ![GitHub Pages Settings](images/GitHubPagesSettings.png)
@@ -314,13 +314,13 @@ To make things easier, you can host your code in the `master` branch, as opposed
 
 Note that because GitHub now doesn't generate a template site for you, if you go to
 
-http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the project)
+http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
 
 you will get a 404 not-found error.
 
 However, you can continue to follow the lecture to create a **site** folder (or whatever you wish to call it: **module2-solution**, **module3-solution**, etc.) inside your repo and place your code files in that folder. Then, you can access your repo using this URL:
 
-http://yourgihubid.github.io/repository-name/site .
+http://yourgihubid.github.io/repository-name/site/index.html.
 
 ----------
 
