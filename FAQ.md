@@ -23,8 +23,8 @@
   - [I am unable to clone the github repo or upload my assignment](#q-i-am-unable-to-clone-the-github-repo-or-upload-my-assignment)
   - [While typing in my password during an attempt to push files to GitHub, nothing is showing up while I type.  What is going on?](#q-while-typing-in-my-password-during-an-attempt-to-push-files-to-github-nothing-is-showing-up-while-i-type--what-is-going-on)
   - [Why am I seeing “Please tell me who you are” when trying to commit to git?](#q-why-am-i-seeing-please-tell-me-who-you-are-when-trying-to-commit-to-git)
-  - [What GitHub URL do I use to access my site?](#q-what-github-url-do-i-use-to-access-my-site)
   - [Where is the link to clone the repository on GitHub? The page looks different than what is shown in the video.](#q-where-is-the-link-to-clone-the-repository-on-github-the-page-looks-different-than-what-is-shown-in-the-video)
+  - [Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.](#q-where-is-the-launch-automatic-page-generator-button-the-page-looks-different-than-what-is-shown-in-the-video)
 
 ## HTML, CSS, and JavaScript
   - [My CSS is not loading for my web page, what is wrong?](#q--my-css-is-not-loading-for-my-web-page-what-is-wrong)
@@ -296,22 +296,31 @@ Use the commands that the error message suggests to set this up one time. For ex
     [Bob@Coursera ~]$ git config --global user.name "Bob Sponge"
     [Bob@Coursera ~]$ git config --global user.email "bob.sponge@email.com"
 
-#### **Q: What GitHub URL do I use to access my site?**
-A: Before you can view your site on GitHub, your code (HTML, CSS, and JS files) as well as any supporting assets (images) need to be committed to the `gh-pages` branch in GitHub.  Once all resources are checked in, and assuming there are no errors on your page, you can visit your site by accessing a URL formatted as such:
-
-http://yourgihubid.github.io/repository-name/module2-solution.
-
-Be sure to replace 'yourgithubid' with your unique GitHub ID, and the repository-name with the one you chose to use for the project.  Similarly, module2-solution needs to be replaced with the folder in which your solution has been placed.
-
-
-**NOTE:** If you commit to the master branch, your website will not be displayed and will get a "404 Page Not Found" error instead.
-
 #### **Q: Where is the link to clone the repository on GitHub? The page looks different than what is shown in the video.**
 A: Yes, GitHub has slightly changed their user interface since the video was recorded. Here is where you find that link now:
 ![GitHub clone link location](images/GitHubCloneOrDownloadButton.png)
 
 Click that green button and you'll have a choice to either download all of the code as a zip file or copy the link for cloning with git:
 ![Select cope of clone location](images/GitHubCopyCloneLink.png)
+
+#### **Q: Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.**
+A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages in the branch of your choice.
+
+This is what you will see when you go to the Settings page of your repo.
+![GitHub Pages Settings](images/GitHubPagesSettings.png)
+
+To make things easier, you can host your code in the `master` branch, as opposed to the `gh-pages` branch used in the lecture video. To do this, use the **Select source** drop-down menu to select **master branch** as your GitHub Pages publishing source. Don't forget to click on the **Save** button.
+![GitHub Pages Branch](images/GitHubPagesMasterBranch.png)
+
+Note that because GitHub now doesn't generate a template site for you, if you go to
+
+http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
+
+you will get a 404 not-found error.
+
+However, you can continue to follow the lecture to create a **site** folder (or whatever you wish to call it: **module2-solution**, **module3-solution**, etc.) inside your repo and place your code files in that folder. Then, you can access your repo using this URL:
+
+http://yourgihubid.github.io/repository-name/site/index.html.
 
 ----------
 
