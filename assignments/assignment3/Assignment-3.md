@@ -29,9 +29,9 @@ Here is what you will need to complete the assignment:
   * Tablet mockup illustration should correspond to Bootstrap `sm`-based classes
   * Mobile mockup illustration should correspond to Bootstrap `xs`-based classes
 
-8. Navbar: Create a navbar that scrolls away together with the page, i.e., the default one that does not stay in the same place when the page scrolls. The navbar should have a company name (i.e., `navbar-brand` class) called "Food, LLC" that is aligned to the left side of the navbar. (*See* [http://getbootstrap.com/components/#navbar](http://getbootstrap.com/components/#navbar). *Make the browser window narrower to see the mobile menu button appear in the first example shown at the provided link.*)
+8. Navbar: Create a navbar that scrolls away together with the page (the navbar should become invisible and is not fixed to the top when you scroll the page down). The navbar should have a company name (i.e., `navbar-brand` class) called "Food, LLC" that is aligned to the left side of the navbar. (*See* [http://getbootstrap.com/components/#navbar](http://getbootstrap.com/components/#navbar). *Make the browser window narrower to see the mobile menu button appear in the first example shown at the provided link.*)
 <br><br>
-For desktop and tablet view, the navbar should not contain anything else. No other buttons should be visible. (_Hint: use 'visible-xs' class on the button that activates the dropdown._)
+For desktop and tablet view, the navbar should not contain anything else. No other buttons should be visible. (_Hint: use 'visible-xs' class._)
 
 9. Navbar - Mobile View: Create a simple menu button (3 horizontal bars). When the user clicks that button, a dropdown menu should appear (as illustrated in Mobile Open Menu illustration below.) The dropdown menu should contain 3 items: Chicken, Beef, and Sushi.
 <br><br>
