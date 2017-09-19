@@ -25,6 +25,7 @@
   - [Why am I seeing “Please tell me who you are” when trying to commit to git?](#q-why-am-i-seeing-please-tell-me-who-you-are-when-trying-to-commit-to-git)
   - [Where is the link to clone the repository on GitHub? The page looks different than what is shown in the video.](#q-where-is-the-link-to-clone-the-repository-on-github-the-page-looks-different-than-what-is-shown-in-the-video)
   - [Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.](#q-where-is-the-launch-automatic-page-generator-button-the-page-looks-different-than-what-is-shown-in-the-video)
+  - [Where is the `gh-pages` branch?](#q-where-is-the-gh-pages-branch)
 
 ## HTML, CSS, and JavaScript
   - [My CSS is not loading for my web page, what is wrong?](#q--my-css-is-not-loading-for-my-web-page-what-is-wrong)
@@ -304,15 +305,19 @@ Click that green button and you'll have a choice to either download all of the c
 ![Select cope of clone location](images/GitHubCopyCloneLink.png)
 
 #### **Q: Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.**
-A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages in the branch of your choice.
+A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages from `master`, `gh-pages`, or a `/docs` folder on your `master` branch.
 
-This is what you will see when you go to the Settings page of your repo.
+This is what you will see when you go to the **Settings** page of your repo.
 ![GitHub Pages Settings](images/GitHubPagesSettings.png)
 
-To make things easier, you can host your code in the `master` branch, as opposed to the `gh-pages` branch used in the lecture video. To do this, use the **Select source** drop-down menu to select **master branch** as your GitHub Pages publishing source. Don't forget to click on the **Save** button.
+Since now GitHub does not generate a `gh-pages` branch by default (see here: [Where is the `gh-pages` branch?](#q-where-is-the-gh-pages-branch)), to make things easier we suggest you simply host your code in the `master` branch.
+
+To do this, use the **Select source** drop-down menu to select **master branch** as your GitHub Pages publishing source. Don't forget to click on the **Save** button.
 ![GitHub Pages Branch](images/GitHubPagesMasterBranch.png)
 
-Note that because GitHub now doesn't generate a template site for you, if you go to
+*Skip the **Theme Chooser** section.*
+
+Note that because GitHub now does not generate a template site for you either, if you go to
 
 http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
 
@@ -322,6 +327,13 @@ However, you can continue to follow the lecture to create a **site** folder (or 
 
 http://yourgihubid.github.io/repository-name/site/index.html.
 
+#### **Q: Where is the `gh-pages` branch?**
+A: Since the lecture was recorded, GitHub has changed the way how GitHub Pages are published. Now, by default, GitHub does not generate a `gh-pages` branch for you.
+
+To make things easier, we suggest you ignore the `gh-pages` branch introduced in the lecture (no need to do `git checkout gh-pages`) and simply stick with the `master` branch (if you are already in another branch, do a `git checkout master`).
+
+You may also find this answer helpful: [Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.](#q-where-is-the-launch-automatic-page-generator-button-the-page-looks-different-than-what-is-shown-in-the-video)
+                                        
 ----------
 
 
