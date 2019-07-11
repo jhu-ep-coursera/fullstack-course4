@@ -203,6 +203,8 @@ A: One reason this may not work is because the file has not yet been saved with 
 
 Once either of the above two methods have been completed, you will be able to type 'html', followed by `ctrl+space` on the keyboard, to generate a basic HTML template document.
 
+Another reason is that you may have multiple input sources enabled (e.g. because you type in a non-English language).  On a Mac, the default keyboard shortcut for switching input sources is `ctrl+space` which conflicts with the Sublime Text shortcut.  You can fix this by mapping the Sublime shortcut to something else, like `alt+space`, using [these instructions](https://forum.sublimetext.com/t/solved-ctrl-space-doesnt-complete/7246/4).
+
 #### **Q: How do I edit multiple lines at the same time in Sublime Text?**
 A: In Microsoft Windows, hold down the **`ctrl`** key on the keyboard while performing a select as you typically do (left mouse button down while moving the mouse over the text you want to select, and then releasing the left mouse button).  Be sure to keep **`ctrl`** down and you can move to another spot within the text and repeat the step with the mouse to select yet another section of text.
 
