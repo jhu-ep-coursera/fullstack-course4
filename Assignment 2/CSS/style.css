@@ -1,0 +1,117 @@
+	text-align: center;
+	font-family:"Segoe Script";
+}
+h2{
+	text-align:right;
+}
+@media (min-width: 768px){
+#P{
+	display: inline;
+	
+}
+#A{
+  border:solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+  text-align: center;
+  font-family:"Comic Sans MS";
+  background-color:blue;
+  float: left;
+  width: 33%;
+  height: 500px;
+  padding:10px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+#B{
+  border:solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+  text-align: center;
+  font-family:"Ink Free";
+  background-color:yellow;
+  float: left;
+  height: 500px;
+  width: 33%;
+  padding:10px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+ 
+}
+#C{
+  border:solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+  height: 500px;
+  text-align: center;
+  font-family:"Microsoft JhengHei UI Light";
+  background-color:pink;
+  float: right;
+  width: 33%;
+  padding:10px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	
+	#A{
+		margin-left: 20px;
+		width: 412.5px;
+		float:left;
+		height: 412.5px;
+	}
+	#B{
+		margin-right: 20px;
+		width: 412.5px;
+		float:right;
+		height: 412.5px;
+	}
+	#C{
+		margin-top: 20px;
+		align-content: center;
+		height: 412.5px;
+		width: 850px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+
+	}
+}
+@media (max-width: 767px){
+
+	#A{
+       border:solid black;
+       box-sizing: border-box;
+       margin-top: 5px;
+       text-align: center;
+       font-family:"Comic Sans MS";
+       background-color:blue;      
+       padding:10px 10px;
+		height: 25%;
+		margin-bottom: 20px;
+	}
+	#B{
+		border:solid black;
+        box-sizing: border-box;
+        margin-top: 5px;
+        text-align: center;
+        font-family:"Ink Free";
+        background-color:yellow;
+        padding:10px 10px;
+		height: 25%;
+		margin-bottom: 20px;
+	}
+	#C{
+		border:solid black;
+        box-sizing: border-box;
+        margin-top: 5px;
+        text-align: center;
+        font-family:"Microsoft JhengHei UI Light";
+        background-color:pink;
+        padding:10px 10px;
+		height: 25%;
+		margin-bottom: 20px;
+	}
+}
