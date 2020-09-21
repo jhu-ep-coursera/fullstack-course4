@@ -4,7 +4,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-	background-color: grey;
+	background-color: White;
 }
 
 h1 {
@@ -21,26 +21,28 @@ h1 {
   margin-bottom: 30px;
 
 
+}
 
 p#chicken {
-	background-color: #ff9999;
-    font-size: 125%;
-	float: right;
-	border: 1px solid black;
-	padding: 5px 40px 5px 40px;
-	position: top-right;
-	margin-top: 0px;
-	margin-right: 0px;
-	
+  background-color: #ff9999;
+  font-size: 125%;
+  float: right;
+  border: 1px solid black;
+  padding: 5px 40px 5px 40px;
+  position: top-right;
+  margin-top: 0px;
+  margin-right: 0px;
+  
 }
+
 
 p#beef {
 	background-color: #ff1a1a;
-    font-size: 125%;
+  font-size: 125%;
 	float: right;
 	border: 1px solid black;
 	padding: 5px 50px 5px 50px;
-    position: top-right;
+  position: top-right;
 	margin-top: 0px;
 	margin-right: 0px;
 	
@@ -48,11 +50,11 @@ p#beef {
 
 p#sushi {
 	background-color: #ffcc66;
-    font-size: 125%;
+  font-size: 125%;
 	float: right;
 	border: 1px solid black;
 	padding: 5px 50px 5px 50px;
-    position: top-right;
+  position: top-right;
 	margin-top: 0px;
 	margin-right: 0px;
 	
