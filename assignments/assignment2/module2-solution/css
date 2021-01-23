@@ -1,0 +1,285 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First assigment</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+             
+        }
+
+        h1{
+            margin-bottom: 20px;
+            text-align: center;
+            color: green;
+        }
+         
+        p{
+            width: 150px;
+            height: 30px;
+            /*bottom: 37px;
+            left:652px;*/
+            float: right;
+            clear: both;
+            margin-left: 800px;
+            margin-bottom: 5px;
+            border:2px solid black;
+            text-align: center;
+           
+
+        }
+        section {
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            width: 80%;
+            height: 150px;
+            background-color: gray;
+            overflow: auto;
+            font-family: Helvetica;
+
+             
+
+        
+        }
+        #p1{
+            background-color: #A52A2A;
+            
+
+        }
+        #p2{
+            background-color: #DEB887;
+
+        }
+        #p3{
+           background-color: #5F9EA0;
+      }
+      div#container{
+        background-color: white;
+      }
+
+      
+
+         /*#sec1{
+            background-color: gray;
+            width: 80%;
+            height: 100px;
+        }
+        #sec2{
+            background-color: gray;
+            width: 80%;
+            height: 100px;
+        }
+         #sec3{
+            background-color: gray;
+            width: 80%;
+            height: 100px;
+        }*/
+          .row {
+            width: 100%;
+        }
+                /************ lagé Devices **********************/
+        @media (min-width: 992px){
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, 
+            .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+                    float: left;
+                    border: 2px solid green;
+                }
+                .col-lg-1 {
+                    width: 8.33%;
+                }
+                .col-lg-2{
+                    width: 16.66%;
+                }
+                .col-lg-3 {
+                    width: 25%;
+                }
+                .col-lg-4 {
+                    width: 33.33%;
+
+                }
+                .col-lg-5 {
+                    width: 41.66%;
+                }
+                .col-lg-6 {
+                    width: 50%; 
+                }
+                .col-lg-7 {
+                    width: 58.33%; 
+                }
+                .col-lg-8 {
+                    width: 66.66%;
+                }
+                .col-lg-9 {
+                    width: 74.99%;
+                }
+                .col-lg-10 {
+                    width: 83.33%;
+                }
+                .col-lg-11 {
+                    width: 91.66%;
+                }
+                .col-lg-12 {
+                    width: 100%;
+                }
+
+             /*#sec1{
+                width: 90%;
+             }
+             #sec2{
+                width: 90%;
+             }
+             #sec3{
+                width: 90%;
+             }*/
+
+        }
+        /************ medium Devices **********************/
+         @media (min-width: 768px) and (max-width: 991px){
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, 
+                 .col-md-10, .col-md-11, .col-md-12 {
+
+                    float: left;
+                    border: 2px solid green;
+                }
+                .col-md-1 {
+                    width: 8.33%;
+                }
+                .col-md-2 {
+                    width: 16.66%;
+                }
+                .col-md-3 {
+                    width: 25%;
+                }
+                .col-md-4 {
+                    width: 33%;
+                }
+                .col-md-5 {
+                    width: 41.66%;
+                }
+                .col-md-6 {
+                    width: 50%;
+                }
+                .col-md-7 {
+                    width: 58.33%;
+                }
+                .col-md-8 {
+                    width: 66.66%;
+                }
+                .col-md-9 {
+                    width: 74.99%;
+                }
+                .col-md-10 {
+                    width: 83.33%;
+                }
+                .col-md-11 {
+                    width: 91.66%;
+                }
+                .col-md-12 {
+                    width: 100%;
+                }
+
+            /* #sec1{
+                width: 70%;
+             }
+             #sec2{
+                width: 70%;
+             }
+             #sec3{
+                width: 70%;
+             }*/
+
+        }
+        /************ equal Devices **********************/
+         @media (min-width: 767px) and (min-width: 767px)   {
+            
+             .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
+                 .col-sm-10, .col-sm-11, .col-sm-12 {
+
+                    float: left;
+                    border: 2px solid green;
+                }
+                .col-sm-1 {
+                    width: 8.33%;
+                }
+                .col-sm-2 {
+                    width: 16.66%;
+                }
+                .col-sm-3 {
+                    width: 25%;
+                }
+                .col-sm-4 {
+                    width: 33%;
+                }
+                .col-sm-5 {
+                    width: 41.66%;
+                }
+                .col-sm-6 {
+                    width: 50%;
+                }
+                .col-sm-7 {
+                    width: 58.33%;
+                }
+                .col-sm-8 {
+                    width: 66.66%;
+                }
+                .col-sm-9 {
+                    width: 74.99%;
+                }
+                .col-sm-10 {
+                    width: 83.33%;
+                }
+                .col-sm-11 {
+                    width: 91.66%;
+                }
+                .col-sm-12 {
+                    width: 100%;
+                }
+
+
+            /*#sec1{
+                width: 50%;
+             }
+             #sec2{
+                width: 50%;
+             }
+             #sec3{
+                width: 50%;
+             }*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div id="container">
+    <div class="row">
+
+      <section class= "col-lg-3 col-md-5"><p id="p1"><strong>Chicken</strong></p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </section>
+
+     <section class= "col-lg-3 col-md-5"><p id="p2"><strong>Sushi</strong></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</section>
+
+     <section  class= "col-lg-3 col-md-10"><p id="p3"><strong>Beef</strong></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     laborum tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     laborum
+     laborum.</section>
+
+
+   </div>
+</div>
+</body>
+</html>
