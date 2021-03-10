@@ -1,0 +1,78 @@
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: arial serif;
+}
+p{
+	font-size: 20px;
+	font-family: arial sans-serif;
+}
+	div.all {
+	border: 2px solid black;	
+	background: gray;
+	margin: 20px;
+	float: left;
+	width:25%;
+	padding: 15px;
+	position: relative;
+}
+	
+    h2.chiken{
+	border: 2px solid black;
+	background: pink;
+	float: right;
+	width: 75px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	font-size: 18px;
+}
+h2.Beef{
+	border: 2px solid black;
+	background: red;
+	float: right;
+	width: 75px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	font-size: 18px;
+}
+h2.sushi{
+	border: 2px solid black;
+	background: rgb(255, 213, 90);
+	float: right;
+	width: 75px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	font-size: 18px;
+}
+/* for desktop*/
+@media screen and (max-width: 992px) {
+	div.one{ width: 33.33%; float: left;}
+	}
+
+/* for tablet version*/
+@media screen and (max-width: 768px) and (min-width: 991px) {
+
+    div.one{ width: 50%; float: left;}
+	}
+	div.two{ width: 50%; float: left;}
+	}
+	div.three{ width: 100%; float: left;}
+	}
+/* for mobile version*/
+@media screen and (min-width: 767px) {
+
+    div.one{ width: 100%; float: left;}
+	}
+	div.two{ width: 100%; float: left;}
+	}
+	div.three{ width: 100%; float: left;}
+	}
