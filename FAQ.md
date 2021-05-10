@@ -321,13 +321,13 @@ To do this, use the **Select source** drop-down menu to select **master branch**
 
 Note that because GitHub now does not generate a template site for you either, if you go to
 
-http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
+http://yourgithubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
 
 you will get a 404 not-found error.
 
 However, you can continue to follow the lecture to create a **site** folder (or whatever you wish to call it: **module2-solution**, **module3-solution**, etc.) inside your repo and place your code files in that folder. Then, you can access your repo using this URL:
 
-http://yourgihubid.github.io/repository-name/site/index.html.
+http://yourgithubid.github.io/repository-name/site/index.html.
 
 #### **Q: Where is the `gh-pages` branch?**
 A: Since the lecture was recorded, GitHub has changed the way how GitHub Pages are published. Now, by default, GitHub does not generate a `gh-pages` branch for you.
