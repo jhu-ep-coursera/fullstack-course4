@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column{
+  float: left;
+  width: 30%;
+  margin-right: 10px;
+  border:2px solid;
+     text-align: right;
+    padding: 0px 0px 20px 20px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+h2{
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    border: solid 1px black;
+    margin:0px;
+    margin-top: 0px;
+    /* margin-right: 10px; */
+    width: fit-content;
+    float: right;
+}
+/* Clear floats after the columns */
+.row:after 10px   {
+  border: 10px;
+  display: table;
+  clear: both;
+ 
+}
+@media screen and (max-width: 767px) {
+  .column { width: 100%;
+    margin-bottom: 8px;
+    height: auto; }
+    body
+    {
+      padding: 10px;
+    }
+    h2{
+      margin-bottom:20px;
+
+    }
+
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align: center">Menu</h1>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style="background-color: pink;">  chicken </h2>
+     <br>
+    <p>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+     <h2 style=" background-color:  red; ">beef </h2>
+     <br>
+    <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and ...</p>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2 style="background-color:  yellow;">shusi</h2><br>
+    <p>SThe term sushi actually refers to foods that use a type of rice seasoned with vinegar and are garnished with raw fish or vegetable.</p>
+  </div>
+  
+</div>
+
+</body>
+</html>
