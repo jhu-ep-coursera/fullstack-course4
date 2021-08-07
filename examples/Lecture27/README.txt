@@ -1,1 +1,0 @@
-This lecture did not contain any coding examples. See video.
