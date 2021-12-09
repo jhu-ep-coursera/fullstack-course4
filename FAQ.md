@@ -307,32 +307,33 @@ Click that green button and you'll have a choice to either download all of the c
 ![Select cope of clone location](images/GitHubCopyCloneLink.png)
 
 #### **Q: Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.**
-A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages from `master`, `gh-pages`, or a `/docs` folder on your `master` branch.
+A: Yes, GitHub has changed the way how GitHub Pages are created. They have removed the "Launch automatic page generator" button. Instead, they allow you to host your pages from `master` (or now `main`), or a `/docs` folder on your `master` (or now called `main`) branch.
 
 This is what you will see when you go to the **Settings** page of your repo.
-![GitHub Pages Settings](images/GitHubPagesSettings.png)
+![GitHub Pages Settings](https://user-images.githubusercontent.com/4999744/145314321-d97ee6d2-adf1-46c5-bfee-2ade5203cbf7.png)
 
-Since now GitHub does not generate a `gh-pages` branch by default (see here: [Where is the `gh-pages` branch?](#q-where-is-the-gh-pages-branch)), to make things easier we suggest you simply host your code in the `master` branch.
 
-To do this, use the **Select source** drop-down menu to select **master branch** as your GitHub Pages publishing source. Don't forget to click on the **Save** button.
-![GitHub Pages Branch](images/GitHubPagesMasterBranch.png)
+Since now GitHub does not generate a `gh-pages` branch by default (see here: [Where is the `gh-pages` branch?](#q-where-is-the-gh-pages-branch)), to make things easier we suggest you simply host your code in the `master` (or now called `main`) branch.
 
-*Skip the **Theme Chooser** section.*
+To do this, click **Pages** on the left hand side, select `main` branch as your GitHub Pages publishing source. Don't forget to click on the **Save** button.
+![GitHub Pages Settings](https://user-images.githubusercontent.com/4999744/145314353-6834452a-0318-4a27-a6f1-1cf4cbad8f50.png)
 
-Note that because GitHub now does not generate a template site for you either, if you go to
 
-http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo)
+Note that it will only allow you to choose a branch if you already have some content in your repo. If you don't, you'll have to get something in there first. However, if, when you create the repo, you choose "Add a README file", that's already enough.
 
-you will get a 404 not-found error.
+*Skip the **Choose a theme**
 
-However, you can continue to follow the lecture to create a **site** folder (or whatever you wish to call it: **module2-solution**, **module3-solution**, etc.) inside your repo and place your code files in that folder. Then, you can access your repo using this URL:
+Note that now you should be able to go to http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo) and see the README file that's in the root of your repository.
+
+
+Now you can continue to follow the lecture to create a **site** folder (or whatever you wish to call it: **module2-solution**, **module3-solution**, etc.) inside your repo and place your code files in that folder. Then, you can access that 'site' using this URL:
 
 http://yourgihubid.github.io/repository-name/site/index.html.
 
 #### **Q: Where is the `gh-pages` branch?**
 A: Since the lecture was recorded, GitHub has changed the way how GitHub Pages are published. Now, by default, GitHub does not generate a `gh-pages` branch for you.
 
-To make things easier, we suggest you ignore the `gh-pages` branch introduced in the lecture (no need to do `git checkout gh-pages`) and simply stick with the `master` branch (if you are already in another branch, do a `git checkout master`).
+To make things easier, we suggest you ignore the `gh-pages` branch introduced in the lecture (no need to do `git checkout gh-pages`) and simply stick with the `master` (or now `main`) branch (if you are already in another branch, do a `git checkout master` or `git checkout main`).
 
 You may also find this answer helpful: [Where is the “Launch automatic page generator” button? The page looks different than what is shown in the video.](#q-where-is-the-launch-automatic-page-generator-button-the-page-looks-different-than-what-is-shown-in-the-video)
                                         
