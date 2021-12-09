@@ -321,7 +321,7 @@ To do this, click **Pages** on the left hand side, select `main` branch as your 
 
 Note that it will only allow you to choose a branch if you already have some content in your repo. If you don't, you'll have to get something in there first. However, if, when you create the repo, you choose "Add a README file", that's already enough.
 
-*Skip the **Choose a theme**
+Skip the **Choose a theme**
 
 Note that now you should be able to go to http://yourgihubid.github.io/repository-name/ (replace 'yourgithubid' with your unique GitHub ID and 'repository-name' with the one you chose to use for the repo) and see the README file that's in the root of your repository.
 
