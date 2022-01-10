@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Use this template!
 about: Question from Coursera?
 title: ''
 labels: ''
