@@ -173,7 +173,7 @@ The simplest solution is to use a computer which is not behind a proxy, but if t
     npm config set proxy http://proxy.company.com:proxyport
     npm config set https-proxy http://proxy.company.com:proxyport
 
-where 'proxy.company.com' is the proxy server namoe or IP address supplied by your IT department, and proxyport is the port number they supply.
+where ''proxy.company.com'' is the proxy server namoe or IP address supplied by your IT department, and proxyport is the port number they supply.
 
 Note that if you need to supply credentials to the proxy (again, IT should be able to advise) then you should add them to the proxy address:
 
