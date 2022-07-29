@@ -1,5 +1,5 @@
 ---
-name: Use this template!
+name: Use this template to create ANY ISSUE! All others will be deleted!
 about: Question from Coursera?
 title: ''
 labels: ''
