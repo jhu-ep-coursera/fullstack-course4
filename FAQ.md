@@ -437,3 +437,14 @@ Browser Sync, among other things, provides a local server option. So, simply nav
     browser-sync start --server --directory --files "**/*"
 
 Of course, this assumes you installed browser-sync as was instructed in Module 1.
+#### **Q: Why can't I use browser-sync on window 11. It is said that browser-sync was diasble by the system.
+Here what it said:
+
+browser-sync : File C:\Users\NAENIA\AppData\Roaming\npm\browser-sync.ps1 cannot be loaded because running scripts is
+disabled on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ browser-sync start --server --directory --files "*"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
