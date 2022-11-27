@@ -1,5 +1,8 @@
 # Frequently Asked Questions
 
+## November, 2022 Update
+Instead of Heroku URLs to retrieve the data for the David Chu's China Bistro restraurant website, which we build at the end of the course, we are now using Google Firebase. The new URL is https://coursera-jhu-default-rtdb.firebaseio.com/categories.json for retrieving all categories of items and https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json for retrieving all items for a single category (e.g., https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/L.json for all items for the `L` Lunch category).
+
 ## Most Important!
   - [How to ask and get your question answered - A MUST READ!](#q-how-to-ask-and-get-your-question-answered-a-must-read)
 
