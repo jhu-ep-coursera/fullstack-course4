@@ -109,5 +109,4 @@ Here is the mockup illustration of the tablet version of the site:
 
 Here is the mockup illustration of the mobile version of the site with the menu dropdown NOT open (on the left) and menu drop down open (on the right):
 
-![Mobile - Optional (Closed)](images/mobile-optional-collapsed.png)
-![Mobile - Optional (Open)](images/mobile-optional-expanded.png)
+![Mobile - Optional 
