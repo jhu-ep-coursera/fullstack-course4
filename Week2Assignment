@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Simple Responsive Work</title>
+        <style>
+            .Library{
+                width: 100%;
+                background-color:rgb(172, 242, 242);
+            }
+            section{
+                width: 400px;
+                height: 160px;
+                background-color: aqua;
+                border: 1px solid black;
+            }
+            h1{
+                font-size: 35px;
+                font-family: Cambria;
+                text-align: center;
+            }
+            h4{
+                border: 1px solid black;
+                margin-top: -1px;
+                margin-left: 279px;
+                width: 120px;
+                text-align: center;
+                background-color: blue;
+                color: aliceblue;
+                border-color: black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+            }
+            #Mybook{
+                background-color: blueviolet;
+            }
+            #Mynovel{
+                background-color: cadetblue;
+            }
+            .Book{
+                position: absolute;
+                margin-left: 425px;
+            }
+            .Novel{
+                position: absolute;
+                margin-left: 840px;
+            }
+            @media(min-width: 992px){
+                .Library{
+                    width: 100%;
+                    position: relative;
+                }
+
+            }
+            @media(min-width: 768px) and (max-width: 991px){
+                .Library{
+                    width: 830px;
+                    height: 430px;
+
+                }
+                .Novel{
+                    margin-left: -1px;
+                    /*position: absolute;
+                    top: 200px;
+                    right: 0%;*/
+                    margin-top: 185px;
+                    width: 825px;
+                    height: 240px;
+                   font-size: 25px;
+                }
+                #Mynovel{
+                    margin-left: 704px;
+                }
+                .Book{
+                    position: absolute;
+                    margin-left: 425px;
+                }
+                .Dictionary{
+                    position: relative;
+                    top: 0%;
+                    left: 0%;
+                }
+            }
+            @media(max-width: 767){
+                .Library{
+                    width: 830px;
+                    height: 430px;
+
+                }
+                .Book{
+                    margin-top: -1px;
+                    margin-left: -1px;
+                }
+                .Dictionary{
+                    margin-top: 730px;
+                    margin-left: -1px;
+                }
+                .Novel{
+                    margin-top: 421px;
+                    margin-left: -1px;
+
+                }
+                section{
+                position: absolute;
+                width: 400px;
+                height: 160px;
+                background-color: aqua;
+                border: 1px solid black;
+                display: block;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <div class="Library">
+            <section class="Book"> <h4 id="Mybook">BOOK</h4> eliminate; annihilate; extinguish; eradicate; wipe out; decimate; carry off<br>kill in large numbers<br>(eliminate; annihilate; extinguish; wipe out; decimate; carry off)<br>▪ the plague wiped out an entire population</section>
+            <section class="Novel"> <h4 id="Mynovel">NOVEL</h4>eliminate; annihilate; extinguish; eradicate; wipe out; decimate; carry off<br>kill in large numbers<br>(eliminate; annihilate; extinguish; wipe out; decimate; carry off)<br>▪ the plague wiped out an entire population</section>
+            <section class="Dictionary"> <h4 id="Mydict">DICTIONARY</h4> eliminate; annihilate; extinguish; eradicate; wipe out; decimate; carry off<br>kill in large numbers<br>(eliminate; annihilate; extinguish; wipe out; decimate; carry off)<br>▪ the plague wiped out an entire population</section>
+        </div>
+        <div>
+        <h5>MY GREETING SIR YAAKOV AND TO OTHER DEAR ASSISTANTS</h5>
+        <p>I'd like to let you know about the lesson lecture23,24-<br> i really had hard to catch clearly those lectures specially for the assessment to submit by using it with columns of different width devices.<br> Anywaway, i would like to have another clear explanation of those lectures otherwise you may correct me on this late submition.<br> <br> Kinds Regard:<br> ERICK.</p>
+        </div>
+    </body>
+</html>
