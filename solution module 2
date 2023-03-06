@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+ /* reset box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* set body margin to 0 */
+body {
+    margin: 0;
+}
+
+/* header styles */
+header {
+    background-color: #f7dc6f;
+    text-align: center;
+    padding: 10px;
+}
+/* main styles */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* section styles */
+section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    background-color: #6b5603;
+    position: relative;
+}
+
+/* section title styles */
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 25
+
+ </style>
+ <body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <main>
+        <section>
+            <div class="section-title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel velit erat. Duis et tempor orci. Donec tristique, erat a feugiat gravida, mi mauris bibendum purus, id ultricies velit libero in urna. Ut tempus, mauris ac elementum maximus, nisl risus feugiat mi, sit amet tincidunt quam urna in massa. Etiam cursus augue nec justo porttitor fringilla. Sed vel eleifend justo. Sed quis arcu sed lorem malesuada ornare eu nec ipsum.</p>
+        </section>
+        <section>
+            <div class="section-title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel velit erat. Duis et tempor orci. Donec tristique, erat a feugiat gravida, mi mauris bibendum purus, id ultricies velit libero in urna. Ut tempus, mauris ac elementum maximus, nisl risus feugiat mi, sit amet tincidunt quam urna in massa. Etiam cursus augue nec justo porttitor fringilla. Sed vel eleifend justo. Sed quis arcu sed lorem malesuada ornare eu nec ipsum.</p>
+        </section>
+        <section>
+            <div class="section-title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel velit erat. Duis et tempor orci. Donec tristique, erat a feugiat gravida, mi mauris bibendum purus, id ultricies velit libero in urna. Ut tempus, mauris ac elementum maximus, nisl risus feugiat mi, sit amet tincidunt quam urna in massa. Etiam cursus augue nec justo porttitor fringilla. Sed vel eleifend justo. Sed quis arcu sed lorem malesuada ornare eu nec ipsum.</p>
+        </section>
+    </main>
+</body>
+</html>
