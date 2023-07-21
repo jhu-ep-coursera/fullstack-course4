@@ -1,0 +1,2 @@
+newfile2 
+Hello i am newfile2 
