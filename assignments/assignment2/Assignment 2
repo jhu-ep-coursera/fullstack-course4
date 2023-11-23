@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <h1>Page Heading</h1>
+    <div class="section" id="chicken">
+        <h2>Chicken</h2>
+        <p>Lorem ipsum...</p>
+    </div>
+    <div class="section" id="beef">
+        <h2>Beef</h2>
+        <p>Lorem ipsum...</p>
+    </div>
+    <div class="section" id="sushi">
+        <h2>Sushi</h2>
+        <p>Lorem ipsum...</p>
+    </div>
+</body>
+</html>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        width: 50%;
+        float: left;
+    }
+
+    #sushi {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+    }
+}
+
